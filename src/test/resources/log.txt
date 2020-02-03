@@ -1,0 +1,83 @@
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+2.1.  The currency match the selected USD currency 
+The currency И match with price
+The currency И match with price
+The currency И match with price
+The currency И match with price
+The currency И match with price
+The currency И match with price
+The currency И match with price
+2.2.  The currency match the selected EUR currency 
+The currency ? match with price
+The currency ? match with price
+The currency ? match with price
+The currency ? match with price
+The currency ? match with price
+The currency ? match with price
+The currency ? match with price
+2.3.  The currency match the selected UAH currency 
+3.------------- set price to "USD $" ------------------ 
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+3. The currency match the selected USD currency 
+4. ------------- type word in catalog "dress" ------- 
+4. ------------- do search in catalog by word "dress" ------- 
+5. ----- start: the page "Search Results" contains the inscription "Products: x"  ------- 
+5. nameplate "“овары" X is on place
+5. ----- end: the page "Search Results" contains the inscription "Products: x"  ------- 
+6. ----- start: Check that the price of all displayed results is displayed in dollars  ------- 
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+The currency $ match with price
+6. ----- end: Check that the price of all displayed results is displayed in dollars ------- 
+7. ----- start: do check before select sorting  ------- 
+PriceData{regularPrice='0,61 $', discount='', priceAfterDiscount='0,61 $'}
+PriceData{regularPrice='1,00 $', discount='', priceAfterDiscount='1,00 $'}
+PriceData{regularPrice='0,97 $', discount='', priceAfterDiscount='0,97 $'}
+PriceData{regularPrice='1,14 $', discount='', priceAfterDiscount='1,14 $'}
+PriceData{regularPrice='0,76 $', discount='-20%', priceAfterDiscount='0,61 $'}
+PriceData{regularPrice='1,14 $', discount='-5%', priceAfterDiscount='1,08 $'}
+PriceData{regularPrice='1,90 $', discount='', priceAfterDiscount='1,90 $'}
+7. ----- do reverse sorting according to p.8  ------- 
+7.  PriceData{regularPrice='1,90 $', discount='', priceAfterDiscount='1,90 $'}
+7.  PriceData{regularPrice='1,14 $', discount='-5%', priceAfterDiscount='1,08 $'}
+7.  PriceData{regularPrice='1,14 $', discount='', priceAfterDiscount='1,14 $'}
+7.  PriceData{regularPrice='1,00 $', discount='', priceAfterDiscount='1,00 $'}
+7.  PriceData{regularPrice='0,97 $', discount='', priceAfterDiscount='0,97 $'}
+7.  PriceData{regularPrice='0,76 $', discount='-20%', priceAfterDiscount='0,61 $'}
+7.  PriceData{regularPrice='0,61 $', discount='', priceAfterDiscount='0,61 $'}
+7. ----- do reverse sorting for future comparing  ------- 
+7. ----- start: Set the sorting to "high to low." ------ 
+7. ----- end: do search in catalog by word "dress" ------ 
+8. ----- start: Check that the goods are sorted by price ------ 
+PriceData{regularPrice='1,90 $', discount='', priceAfterDiscount='1,90 $'}
+PriceData{regularPrice='1,14 $', discount='-5%', priceAfterDiscount='1,08 $'}
+PriceData{regularPrice='1,14 $', discount='', priceAfterDiscount='1,14 $'}
+PriceData{regularPrice='1,00 $', discount='', priceAfterDiscount='1,00 $'}
+PriceData{regularPrice='0,97 $', discount='', priceAfterDiscount='0,97 $'}
+PriceData{regularPrice='0,76 $', discount='-20%', priceAfterDiscount='0,61 $'}
+PriceData{regularPrice='0,61 $', discount='', priceAfterDiscount='0,61 $'}
+8. ----- end: Check that the goods are sorted by price ------ 
+9. and 10. ----- start:  ------ 
+9. For goods with a discount, the percentage discount is indicated along with 
+ // the price before and after the discount. ---> OK 
+10. price equal regularPrice * discount
+9. For goods with a discount, the percentage discount is indicated along with 
+ // the price before and after the discount. ---> OK 
+10. price equal regularPrice * discount
+9. and 10. ----- end:  ------ 
