@@ -14,7 +14,7 @@
         <testng.version>6.13.1</testng.version>
         <aspectj.version>1.8.10</aspectj.version>
         <allure.testng.version>2.7.0</allure.testng.version>
-       <!-- <report.dir>${project.basedir}${file.separator}report</report.dir> -->
+        <report.dir>${project.basedir}${file.separator}report</report.dir>
         <suite.dir>src${file.separator}test${file.separator}resources${file.separator}</suite.dir>
         <!--Debug suite D:\= JAVA_TESTING =\QATestLab_test\src\test\resources\suite.xml  -->
         <debugSuite>${config.dir}debug.xml</debugSuite>
